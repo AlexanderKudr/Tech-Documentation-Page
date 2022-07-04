@@ -1,13 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-    <div class="container"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue JS Documentation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h1>Vue Documentation</h1>
+        <ul>
+          <li>
+            <a href="#Introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#What-is-Vue?">What is Vue?</a>
+          </li>
+          <li>
+            <a href="The-Progressive-Framework">The Progressive Framework</a>
+          </li>
+          <li>
+            <a href="Single-File-Components">Single-File Components</a>
+          </li>
+          <li>
+            <a href="API-Styles">API Styles</a>
+          </li>
+          <li>
+            <a href="Options-API">Options API</a>
+          </li>
+          <li>
+            <a href="Composition-API">Composition API</a>
+          </li>
+          <li>
+            <a href="Which-to-Choose?">Which to Choose?</a>
+          </li>
+          <li>
+            <a href="Still-Got-Questions?">Still Got Questions?</a>
+          </li>
+          <li>
+            <a href="Pick-Your-Learning-Path">Pick Your Learning Path</a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <section>
+          <h1>Introduction</h1>
+          <hr />
+          <h1>What is Vue?</h1>
+          <article>
+            <p>
+              Vue (pronounced /vju:/, like view) is a JavaScript framework for
+              building user interfaces. It builds on top of standard HTML, CSS
+              and JavaScript, and provides a declarative and component-based
+              programming model that helps you efficiently develop user
+              interfaces, be it simple or complex.
+            </p>
+            <p>Here is a minimal example:</p>
+            <code
+              >import { createApp } from 'vue' createApp({ data() { return {
+              count: 0 } } }).mount('#app')
+            </code>
+            <code
+              ><div id="app">
+                <button @click="count++">Count is: {{ count }}</button>
+              </div>
+            </code>
+            <p>The above example demonstrates the two core features of Vue:</p>
+            <ul>
+              <li>
+                <b>Declarative Rendering:</b>Vue extends standard HTML with a
+                template syntax that allows us to declaratively describe HTML
+                output based on JavaScript state.
+              </li>
+              <li>
+                <b>Reactivity:</b> Vue automatically tracks JavaScript state
+                changes and efficiently updates the DOM when changes happen.
+              </li>
+            </ul>
+            <p>
+              You may already have questions - don't worry. We will cover every
+              little detail in the rest of the documentation. For now, please
+              read along so you can have a high-level understanding of what Vue
+              offers.
+            </p>
+            <div class="card">
+              <h3>Prerequisites</h3>
+              <p>
+                The rest of the documentation assumes basic familiarity with
+                HTML, CSS and JavaScript. If you are totally new to frontend
+                development, it might not be the best idea to jump right into a
+                framework as your first step - grasp the basics and then come
+                back! Prior experience with other frameworks helps, but is not
+                required.
+              </p>
+            </div>
+          </article>
+          <hr />
+          <h1>The Progressive Framework</h1>
+          <article>
+            <p>
+              Vue is a framework and ecosystem that covers most of the common
+              features needed in frontend development. But the web is extremely
+              diverse - the things we build on the web may vary drastically in
+              form and scale. With that in mind, Vue is designed to be flexible
+              and incrementally adoptable. Depending on your use case, Vue can
+              be used in different ways:
+            </p>
+            <ul>
+              <li>Enhancing static HTML without a build step</li>
+              <li>Embedding as Web Components on any page</li>
+              <li>Single-Page Application (SPA)</li>
+              <li>Fullstack / Server-Side Rendering (SSR)</li>
+              <li>Jamstack / Static Site Generation (SSG)</li>
+              <li>Targeting desktop, mobile, WebGL, and even the terminal</li>
+            </ul>
+            <p>
+              If you find these concepts intimidating, don't worry! The tutorial
+              and guide only require basic HTML and JavaScript knowledge, and
+              you should be able to follow along without being an expert in any
+              of these.
+            </p>
+            <p>
+              If you are an experienced developer interested in how to best
+              integrate Vue into your stack, or you are curious about what these
+              terms mean, we discuss them in more details in
+              <span
+                ><a
+                  href="https://vuejs.org/guide/extras/ways-of-using-vue.html"
+                  target="_blank"
+                  >Ways of Using Vue</a
+                ></span
+              >.
+            </p>
+            <p>
+              Despite the flexibility, the core knowledge about how Vue works is
+              shared across all these use cases. Even if you are just a beginner
+              now, the knowledge gained along the way will stay useful as you
+              grow to tackle more ambitious goals in the future. If you are a
+              veteran, you can pick the optimal way to leverage Vue based on the
+              problems you are trying to solve, while retaining the same
+              productivity. This is why we call Vue "The Progressive Framework":
+              it's a framework that can grow with you and adapt to your needs.
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
