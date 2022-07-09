@@ -97,7 +97,9 @@
               </p>
             </div>
           </article>
+        </section>
           <hr />
+        <section>
           <h1>The Progressive Framework</h1>
           <article>
             <p>
@@ -145,36 +147,151 @@
               it's a framework that can grow with you and adapt to your needs.
             </p>
           </article>
+        </section>
           <hr />
+        <section>
           <h1>Single-File Components</h1>
           <article>
             <p>In most build-tool-enabled Vue projects, we author Vue components using an HTML-like file format called Single-File Component (also known as <code>*.vue</code> files, abbreviated as SFC). A Vue SFC, as the name suggests, encapsulates the component's logic (JavaScript), template (HTML), and styles (CSS) in a single file. Here's the previous example, written in SFC format:</p>
             <code>
-                <script>
-                export default {
-                  data() {
-                    return {
-                      count: 0
-                    }
+              <!--
+              <script>
+              export default {
+                data() {
+                  return {
+                    count: 0
                   }
                 }
-                </script>
-                
-                <template>
-                  <button @click="count++">Count is: {{ count }}</button>
-                </template>
-                
-                <style scoped>
-                button {
-                  font-weight: bold;
-                }
-                </style>
+              }
+              </script>
+              
+              <template>
+                <button @click="count++">Count is: {{ count }}</button>
+              </template>
+              
+              <style scoped>
+              button {
+                font-weight: bold;
+              }
+              </style>
+              -->
             </code>
           </article>
+        </section>
           <hr />
+        <section>
           <h1>API Styles</h1>
-          <p>Vue components can be authored in two different API styles: Options API and Composition API.</p>
-          <h1>Options API</h1>
+          <article>
+            <p>Vue components can be authored in two different API styles: Options API and Composition API.</p>
+            <h2>Options API</h2>
+              <p>With Options API, we define a component's logic using an object of options such as <code>data</code>, <code>methods</code>, and <code>mounted</code>. Properties defined by options are exposed on <code>this</code> inside functions, which points to the component instance:</p>
+              <code>
+                <!--
+                  <script>
+                   export default {
+              // Properties returned from data() become reactive state
+              // and will be exposed on `this`.
+              data() {
+                return {
+                  count: 0
+                }
+              },
+            
+              // Methods are functions that mutate state and trigger updates.
+              // They can be bound as event listeners in templates.
+              methods: {
+                increment() {
+                  this.count++
+                }
+              },
+            
+              // Lifecycle hooks are called at different stages
+              // of a component's lifecycle.
+              // This function will be called when the component is mounted.
+              mounted() {
+                console.log(`The initial count is ${this.count}.`)
+              }
+            }
+            </script>
+            <template>
+              <button @click="increment">Count is: {{ count }}</button>
+            </template>
+            -->
+            </code>
+          </article>
+          <h3>Try it in the Playground</h3>
+          <hr />
+          <h2>Composition API</h2>
+          <article>
+
+            <p><!--
+              With Composition API, we define a component's logic using imported API functions. In SFCs, Composition API is typically used with <script setup>. The setup attribute is a hint that makes Vue perform compile-time transforms that allow us to use Composition API with less boilerplate. For example, imports and top-level variables / functions declared in <script setup> are directly usable in the template. Here is the same component, with the exact same template, but using Composition API and <script setup> instead:
+              -->
+              </p>
+            <code>
+            <!--<script setup>
+            import { ref, onMounted } from 'vue'
+            
+            // reactive state
+            const count = ref(0)
+            
+            // functions that mutate state and trigger updates
+            function increment() {
+              count.value++
+            }
+            
+            // lifecycle hooks
+            onMounted(() => {
+              console.log(`The initial count is ${count.value}.`)
+            })
+            </script>
+            
+            <template>
+              <button @click="increment">Count is: {{ count }}</button>
+            </template>
+            -->
+            </code>
+          </article>
+          <h3>Try it in the Playground</h3>
+          <h1>Which to Choose?</h1>
+            <article>
+              <p>Both API styles are fully capable of covering common use cases. They are different interfaces powered by the exact same underlying system. In fact, the Options API is implemented on top of the Composition API! The fundamental concepts and knowledge about Vue are shared across the two styles.
+              The Options API is centered around the concept of a "component instance" (this as seen in the example), which typically aligns better with a class-based mental model for users coming from OOP language backgrounds. It is also more beginner-friendly by abstracting away the reactivity details and enforcing code organization via option groups.            
+              The Composition API is centered around declaring reactive state variables directly in a function scope, and composing state from multiple functions together to handle complexity. It is more free-form, and requires understanding of how reactivity works in Vue to be used effectively. In return, its flexibility enables more powerful patterns for organizing and reusing logic.            
+              You can learn more about the comparison between the two styles and the potential benefits of Composition API in the Composition API FAQ.            
+              If you are new to Vue, here's our general recommendation:            
+              For learning purposes, go with the style that looks easier to understand to you. Again, most of the core concepts are shared between the two styles. You can always pick up the other style later.            
+              For production use:            
+              Go with Options API if you are not using build tools, or plan to use Vue primarily in low-complexity scenarios, e.g. progressive enhancement.            
+              Go with Composition API + Single-File Components if you plan to build full applications with Vue.            
+              You don't have to commit to only one style during the learning phase. The rest of the documentation will provide code samples in both styles where applicable, and you can toggle between them at any time using the API Preference switches at the top of the left sidebar.
+              </p>
+            </article>
+        </section>
+          <hr />
+        <section>
+          <h1>Still Got Questions?</h1>
+          <p>Check out our FAQ.</p>
+        </section>
+          <hr />
+        <section>
+          <h1>Pick Your Learning Path</h1>
+          <p>Different developers have different learning styles. Feel free to pick a learning path that suits your preference - although we do recommend going over all of the content, if possible!</p>
+            <div class="cards">
+              <div class="card1">
+                <h2>Try the Tutorial</h2>
+                <p>For those who prefer learning things hands-on</p>
+                </div>
+              <div class="card2">
+                <h2>Read the Guide</h2>
+                <p>The guide walks you through every aspect of the framework in full detail</p>
+              </div>
+              <div class="card3">
+                <h2>Check out the Examples</h2>
+                <p>Explore examples of core features and common UI tasks</p>
+              </div>
+            </div>
+            <p>Edit this page on GitHub</p>
         </section>
       </main>
     </div>
