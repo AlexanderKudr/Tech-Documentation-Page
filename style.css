@@ -134,11 +134,14 @@ nav a {
     transition: color 0.5s;
 }
 .top-cards .card2 {
-    height: 65px;
+    height: 110px; /*65px*/
     width: 1100px;
     background-color: var(--code-color);
     border-radius: 10px;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .card2 a {
     text-decoration: none;
@@ -154,18 +157,25 @@ nav a {
     margin-top: 5px;
     
 }
+.flex2 .banner {
+    margin-left: -140px;
+}
+.flex2 h3 {
+    margin-left: -285px;
+}
 .card2 img {
     display: inline-block;
     vertical-align: middle;
 }
 .card2 .logo-background {
-    width: 48px;
-    height: 48px;
+    width: 76px;
+    height: 76px;
     background-color: #f9f9f9;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: -110px;
 }
 .card2 h3 {
     font-size: 1.3rem;
@@ -179,6 +189,9 @@ nav a {
 }
 .what-is-vue > p {
     padding: 20px 0px;
+}
+.what-is-vue b {
+    font-size: 1.5rem;
 }
 .what-is-vue pre {
     margin: 20px 0px;
@@ -238,4 +251,24 @@ nav a {
     position: absolute;
     top: 38px;
     left: 30px;
+}
+.core-features p {
+    padding: 20px 0px;
+}
+.core-features ul {
+    color: var(--text-color);
+}
+.core-features li {
+    font-size: 1.3rem;
+    margin-left: 30px;
+}
+.core-features li:before {
+    content: "";
+    background-color: #ebebeb61;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+.core-features b {
+    font-size: 1.4rem;
 }
