@@ -213,9 +213,6 @@ nav a {
     white-space: pre;
     word-break: normal;
     word-wrap: normal;
-    -moz-tab-size: 4;
-      -o-tab-size: 4;
-         tab-size: 4;
     font-size: 1.2rem;
 }
 .result {
@@ -242,26 +239,28 @@ nav a {
     top: 38px;
     left: 30px;
 }
-.core-features p {
-    padding: 20px 0px;
-}
-.core-features ul {
-    color: $text-color;
-    list-style: none;
-}
-.core-features li {
-    font-size: 1.3rem;
-    margin-left: 30px;
-    position: relative;
-}
-.core-features li::before {
-    content: "";
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: hsl(0, 0%, 50%);
-    transition: background-color .5s;
-    left: -1.25rem;
-    top: 1rem;  
+.core-features  {
+    p {
+        padding: 20px 0px;
+    }
+    ul {
+        color: $text-color;
+        list-style: none;
+    }
+    li {
+        font-size: 1.3rem;
+        margin-left: 30px;
+        position: relative;
+    }
+    li::before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: hsl(0, 0%, 50%);
+        transition: background-color .5s;
+        left: -1.25rem;
+        top: 1rem;  
+    }
 }
