@@ -9,18 +9,7 @@ body {
   height: 100%;
   font-size: 16px;
   line-height: 1.7;
-  background-color: var(--back-color);
-}
-
-:root {
-  --text-color: hsla(0, 0%, 100%, 0.878);
-  --fading-text-color:hsla(0, 0%, 61%, 0.878);
-  --link-text: #42b883;
-  --link-text-hover: #42d392;
-  --back-color: hsl(0, 0%, 10%);
-  --code-color: hsl(0, 0%, 14%);
-  --button-color: hsl(0, 0%, 18%);
-  --divider-color: hsla(0, 0%, 33%, 0.65);
+  background-color: hsl(0deg, 0%, 10%);
 }
 
 .container {
@@ -29,7 +18,7 @@ body {
 }
 
 h1, h2, h3, p {
-  color: var(--text-color);
+  color: hsla(0deg, 0%, 100%, 0.878);
 }
 
 p {
@@ -38,7 +27,7 @@ p {
 }
 
 pre {
-  background-color: var(--code-color);
+  background-color: hsl(0deg, 0%, 14%);
 }
 
 code {
@@ -72,16 +61,16 @@ nav li {
 }
 
 nav li a {
-  color: var(--fading-text-color);
+  color: hsla(0deg, 0%, 61%, 0.878);
   transition: color 0.5s;
 }
 
 nav li a:hover {
-  color: var(--text-color);
+  color: hsla(0deg, 0%, 100%, 0.878);
 }
 
 nav a {
-  color: var(--text-color);
+  color: hsla(0deg, 0%, 100%, 0.878);
   text-decoration: none;
   border-bottom: 1px solid;
 }
@@ -109,7 +98,7 @@ nav a {
 .top-cards .card1 {
   height: 180px;
   width: 1100px;
-  background-color: var(--code-color);
+  background-color: hsl(0deg, 0%, 14%);
   border-radius: 10px;
   margin-bottom: 40px;
   display: flex;
@@ -127,7 +116,7 @@ nav a {
 }
 
 .card1 i {
-  color: var(--text-color);
+  color: hsla(0deg, 0%, 100%, 0.878);
   padding-right: 10px;
   margin-left: 30px;
 }
@@ -137,26 +126,26 @@ nav a {
 }
 
 .card1 li {
-  color: var(--fading-text-color);
+  color: hsla(0deg, 0%, 61%, 0.878);
   font-weight: 500;
   font-size: 1.3rem;
 }
 
 .card1 li a {
-  color: var(--link-text);
+  color: #42b883;
   text-decoration: none;
   transition: color 0.5s;
 }
 
 .card1 li a:hover {
-  color: var(--link-text-hover);
+  color: #42d392;
   transition: color 0.5s;
 }
 
 .top-cards .card2 {
   height: 110px;
   width: 1100px;
-  background-color: var(--code-color);
+  background-color: hsl(0deg, 0%, 14%);
   border-radius: 10px;
   margin-bottom: 30px;
   display: flex;
@@ -169,7 +158,7 @@ nav a {
 }
 
 .card2 span {
-  color: var(--link-text);
+  color: #42b883;
 }
 
 .card2 .flex2 {
@@ -276,16 +265,16 @@ nav a {
 .demo {
   height: 120px;
   width: 1100px;
-  background-color: var(--code-color);
+  background-color: hsl(0deg, 0%, 14%);
   border-radius: 15px;
   position: relative;
 }
 
 .demo button {
-  background-color: var(--button-color);
-  color: var(--text-color);
+  background-color: hsl(0deg, 0%, 18%);
+  color: hsla(0deg, 0%, 100%, 0.878);
   padding: 8px 12px;
-  border: 1px solid var(--divider-color);
+  border: 1px solid hsla(0deg, 0%, 33%, 0.65);
   border-radius: 8px;
   cursor: pointer;
   font-size: 1.3rem;
@@ -299,7 +288,7 @@ nav a {
 }
 
 .core-features ul {
-  color: var(--text-color);
+  color: hsla(0deg, 0%, 100%, 0.878);
   list-style: none;
 }
 
