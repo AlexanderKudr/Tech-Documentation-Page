@@ -25,9 +25,15 @@ p {
 }
 pre {
     background-color: $code-color;
+    display: block;
 }
 code {
     color: #ffffffde;
+}
+div,
+section,
+article {
+    display: block;
 }
 
 /*Top section*/

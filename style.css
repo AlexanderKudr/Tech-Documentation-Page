@@ -31,10 +31,17 @@ p {
 
 pre {
   background-color: hsl(0deg, 0%, 14%);
+  display: block;
 }
 
 code {
   color: rgba(255, 255, 255, 0.8705882353);
+}
+
+div,
+section,
+article {
+  display: block;
 }
 
 /*Top section*/
