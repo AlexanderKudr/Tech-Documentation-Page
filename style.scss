@@ -2,12 +2,15 @@ $text-color: hsla(0, 0%, 100%, 0.878);
 $p-text-color: hsla(0, 2%, 92%, 0.878);
 $li-text-color: hsla(0, 2%, 92%, 0.878);
 $fading-text-color:hsla(0, 0%, 61%, 0.878);
-$link-text: #42b883;
-$green-light-border: #42b883; 
-$link-text-hover: #42d392;
+$link-text: hsl(153, 47%, 49%);
+$link-text-hover: hsl(153, 62%, 54%);
+$prerequisite-text-color: hsla(0, 1%, 66%, 0.878);
+$wrapped-code: hsl(209, 52%, 78%);
 
 $back-color: hsl(0, 0%, 10%);
 $code-color: hsl(0, 0%, 14%);
+
+$green-light-border: #42b883; 
 $button-color: hsl(0, 0%, 18%);
 $divider-color: hsla(0, 0%, 33%, 0.65);
 // add some colors to links later

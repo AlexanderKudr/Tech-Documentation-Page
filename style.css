@@ -22,10 +22,14 @@ h1, h2, h3 {
   color: hsla(0deg, 0%, 100%, 0.878);
 }
 
+h2 {
+  font-size: 2.2rem;
+}
+
 p {
   font-size: 1.4rem;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.8;
   color: hsla(0deg, 2%, 92%, 0.878);
 }
 
@@ -94,11 +98,6 @@ nav a {
   position: relative;
 }
 
-.introduction h2 {
-  font-size: 2rem;
-  margin: 20px 0px;
-}
-
 .top-cards {
   display: flex;
   justify-content: center;
@@ -158,13 +157,13 @@ nav a {
 }
 
 .card1 li a {
-  color: #42b883;
+  color: hsl(153deg, 47%, 49%);
   text-decoration: none;
   transition: color 0.5s;
 }
 
 .card1 li a:hover {
-  color: #42d392;
+  color: hsl(153deg, 62%, 54%);
   transition: color 0.5s;
 }
 
@@ -184,7 +183,7 @@ nav a {
 }
 
 .card2 span {
-  color: #42b883;
+  color: hsl(153deg, 47%, 49%);
 }
 
 .card2 .flex2 {
@@ -228,6 +227,10 @@ nav a {
   margin: 4rem 0 1.8rem;
   border-top: 1px solid hsla(0deg, 0%, 33%, 0.65);
   padding-top: 1.2rem;
+}
+
+.what-is-vue {
+  margin-top: 10px;
 }
 
 .what-is-vue > p {
@@ -286,11 +289,12 @@ nav a {
 
 .demo {
   height: 120px;
-  width: 1100px;
+  width: 100%;
   background-color: hsl(0deg, 0%, 14%);
   border-radius: 15px;
   position: relative;
   margin-bottom: 10px;
+  display: block;
 }
 
 .demo button {
@@ -315,7 +319,7 @@ nav a {
 }
 .core-features li {
   font-size: 1.4rem;
-  margin-left: 20px;
+  margin-left: 30px;
   position: relative;
   margin-bottom: 20px;
   color: hsla(0deg, 2%, 92%, 0.878);
@@ -328,12 +332,15 @@ nav a {
   border-radius: 50%;
   background-color: hsl(0deg, 0%, 44%);
   transition: background-color 0.5s;
-  left: -1.25rem;
+  left: -1.6rem;
   top: 1rem;
 }
 
 .core-features-part2 p {
   margin-top: -15px;
+}
+.core-features-part2 span {
+  color: hsl(153deg, 47%, 49%);
 }
 
 .Prerequisites {
@@ -341,35 +348,82 @@ nav a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 250px;
-  width: 1100px;
+  position: relative;
+  width: 100%;
   border: 1px solid #42b883;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: hsl(0deg, 0%, 14%);
+  margin-bottom: 100px;
 }
 .Prerequisites h3 {
-  font-size: 1.4rem;
+  font-size: 1.43rem;
   font-weight: 400;
 }
 .Prerequisites .Prereq-card {
   position: relative;
 }
+.Prerequisites .Prereq-card h3 {
+  padding-left: 70px;
+  padding-top: 30px;
+}
+.Prerequisites .Prereq-card p {
+  padding: 10px 30px 30px 70px;
+  color: hsla(0deg, 1%, 66%, 0.878);
+  line-height: 1.4;
+  word-wrap: break-word;
+  letter-spacing: -0.4px;
+}
 .Prerequisites .Prereq-card:before {
   content: "ⓘ";
   position: absolute;
   font-weight: 600;
-  font-size: 20px;
-  top: 4px;
-  left: 40px;
+  font-size: 23px;
+  top: 32px;
+  left: 32px;
   color: #42b883;
 }
 
-.Prereq-card:before {
-  content: "ⓘ";
+.progress-header {
+  padding-bottom: 40px;
+}
+
+.progress-framework p {
+  padding-bottom: 30px;
+}
+.progress-framework ul {
+  color: hsla(0deg, 0%, 100%, 0.878);
+  list-style: none;
+  padding: 0 0 30px 30px;
+}
+.progress-framework ul li {
+  font-size: 1.4rem;
+  position: relative;
+  color: hsla(0deg, 2%, 92%, 0.878);
+}
+.progress-framework ul li::before {
+  content: "";
   position: absolute;
-  font-weight: 600;
-  font-size: 20px;
-  top: 4px;
-  left: 40px;
-  color: rgb(167, 166, 166);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: hsl(0deg, 0%, 36%);
+  transition: background-color 0.5s;
+  left: -1.8rem;
+  top: 0.9rem;
+}
+.progress-framework a {
+  color: hsl(153deg, 47%, 49%);
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.progress-framework a:hover {
+  color: hsl(153deg, 62%, 54%);
+  transition: color 0.5s;
+}
+
+.single-file-components code {
+  background-color: hsl(0deg, 0%, 14%);
+  padding: 6px 8px 6px 15px;
+  border-radius: 10px;
+  color: hsl(209deg, 52%, 78%);
 }/*# sourceMappingURL=style.css.map */

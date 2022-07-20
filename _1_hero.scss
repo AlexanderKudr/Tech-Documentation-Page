@@ -17,10 +17,13 @@ body {
 h1, h2, h3 {
     color: $text-color;
 }
+h2 {
+    font-size: 2.2rem; 
+}
 p {
     font-size: 1.4rem;
     font-weight: 400;
-    line-height: 2;
+    line-height: 1.8;
     color: $p-text-color;
 }
 pre {
@@ -80,10 +83,6 @@ nav a {
     font-size: 3rem;
     font-weight: 600;
     position: relative;
-}
-.introduction h2 {
-    font-size: 2rem;
-    margin: 20px 0px;
 }
 .top-cards {
     display: flex;
@@ -197,6 +196,9 @@ nav a {
     border-top: 1px solid $divider-color;
     padding-top: 1.2rem;
 }
+.what-is-vue {
+    margin-top: 10px;
+}
 .what-is-vue > p {
     padding: 20px 0px;
 }
@@ -244,11 +246,12 @@ nav a {
 }
 .demo {
     height: 120px;
-    width: 1100px;
+    width: 100%;
     background-color: $code-color;
     border-radius: 15px;
     position: relative;
     margin-bottom: 10px;
+    display: block;
 }
 .demo button {
     background-color: $button-color;
@@ -272,7 +275,7 @@ nav a {
     }
     li {
         font-size: 1.4rem;
-        margin-left: 20px;
+        margin-left: 30px;
         position: relative;
         margin-bottom: 20px;
         color: $li-text-color;
@@ -285,7 +288,7 @@ nav a {
         border-radius: 50%;
         background-color: hsl(0, 0%, 44%);
         transition: background-color .5s;
-        left: -1.25rem;
+        left: -1.6rem;
         top: 1rem;  
     }
 }
@@ -293,40 +296,95 @@ nav a {
     p {
         margin-top: -15px;
     }
+    span {
+        color: $link-text;
+    }
 }
 .Prerequisites {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 250px;
-    width: 1100px;
+    position: relative;
+    width: 100%;
     border: 1px solid $green-light-border;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: $code-color;
+    margin-bottom: 100px;
+
     h3 {
-        font-size: 1.4rem;
+        font-size: 1.43rem;
         font-weight: 400;
     }
     .Prereq-card {
         position: relative;
+        h3 {
+            padding-left: 70px;
+            padding-top: 30px;
+        }
+        p {
+            padding: 10px 30px 30px 70px;
+            color: $prerequisite-text-color;
+            line-height: 1.4;
+            word-wrap: break-word;
+            letter-spacing: -0.4px;
+        }
     }
     .Prereq-card:before {
         content: "\24d8";
         position: absolute;
         font-weight: 600;
-        font-size: 20px;
-        top: 4px;
-        left: 40px;  
+        font-size: 23px;
+        top: 32px;
+        left: 32px;  
         color: $green-light-border;
     }
 }
-.Prereq-card:before {
-    content: "\24d8";
-    position: absolute;
-    font-weight: 600;
-    font-size: 20px;
-    top: 4px;
-    left: 40px;  
-    color: rgb(167, 166, 166); 
+.progress-header {
+    padding-bottom: 40px;    
+}
+.progress-framework {
+    p {
+        padding-bottom: 30px;
+    }
+    ul{
+        color: $text-color;
+        list-style: none;
+        padding: 0 0 30px 30px;
+        
+        li {
+            font-size: 1.4rem;
+            position: relative;
+            color: $li-text-color;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    background-color: hsl(0, 0%, 36%);
+                    transition: background-color .5s;
+                    left: -1.8rem;
+                    top: 0.9rem;  
+            }
+        }
+    }
+    a {
+        color: $link-text;
+        text-decoration: none;
+        transition: color 0.5s;
+        &:hover {
+            color: $link-text-hover;
+            transition: color 0.5s;
+        }
+    }
+
+}
+.single-file-components {
+    code {
+        background-color: $code-color;
+        padding: 6px 8px 6px 15px;
+        border-radius: 10px;
+        color: $wrapped-code;
+    }
 }
