@@ -48,7 +48,6 @@ article {
   display: block;
 }
 
-/*Top section*/
 nav {
   height: 100%;
   position: fixed;
@@ -245,6 +244,8 @@ nav a {
   margin: 20px 0px;
   border-radius: 15px;
   position: relative;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 
 .first-pre:before {
@@ -421,9 +422,37 @@ nav a {
   transition: color 0.5s;
 }
 
-.single-file-components code {
-  background-color: hsl(0deg, 0%, 14%);
-  padding: 6px 8px 6px 15px;
-  border-radius: 10px;
-  color: hsl(209deg, 52%, 78%);
+.single-file-components h2 {
+  padding-bottom: 2.1rem;
+}
+.single-file-components pre {
+  position: relative;
+  margin: 40px 0;
+  border-radius: 15px;
+  overflow-x: auto;
+}
+.single-file-components pre:before {
+  content: "vue";
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  color: rgba(143, 143, 143, 0.73);
+  font-size: 1.4rem;
+}
+.single-file-components pre code {
+  text-align: left;
+  white-space: pre;
+  word-break: normal;
+  word-wrap: break-word;
+  font-size: 1.3rem;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
+}
+.single-file-components .p-2 {
+  padding-bottom: 20px;
+}
+
+.api-styles p {
+  padding: 30px 0;
 }/*# sourceMappingURL=style.css.map */

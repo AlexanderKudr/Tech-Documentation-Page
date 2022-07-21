@@ -1,3 +1,4 @@
+//Text and links colors:
 $text-color: hsla(0, 0%, 100%, 0.878);
 $p-text-color: hsla(0, 2%, 92%, 0.878);
 $li-text-color: hsla(0, 2%, 92%, 0.878);
@@ -6,13 +7,18 @@ $link-text: hsl(153, 47%, 49%);
 $link-text-hover: hsl(153, 62%, 54%);
 $prerequisite-text-color: hsla(0, 1%, 66%, 0.878);
 $wrapped-code: hsl(209, 52%, 78%);
+$wrapped-code-background: hsl(0, 0%, 17%);
 
+//Primary colors:
 $back-color: hsl(0, 0%, 10%);
 $code-color: hsl(0, 0%, 14%);
 
+//Util colors:
 $green-light-border: #42b883; 
 $button-color: hsl(0, 0%, 18%);
 $divider-color: hsla(0, 0%, 33%, 0.65);
-// add some colors to links later
 
-@import "1_hero";
+// add some colors to links later
+@import "0_general";
+@import "_1_rightsidebar";
+@import "2_hero";

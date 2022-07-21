@@ -54,13 +54,13 @@
               </div>
               <div>
                 <ul>
-                  <li style="padding-left: 10px;">
+                  <li style="padding-left: 10px">
                     Vue 2 documentation has been moved to
                     <a href="https://v2.vuejs.org/" target="_blank"
                       >v2.vuejs.org</a
                     >.
                   </li>
-                  <li style="padding-left: 10px;">
+                  <li style="padding-left: 10px">
                     Upgrading from Vue 2? Check out the
                     <a href="https://v3-migration.vuejs.org/" target="_blank"
                       >Migration Guide</a
@@ -76,13 +76,13 @@
                   target="_blank"
                 >
                   <div class="flex2">
-                      <img
-                        class="banner"
-                        alt="Vue Mastery banner"
-                        width="145px"
-                        height="85px"
-                        src="https://storage.googleapis.com/vue-mastery.appspot.com/flamelink/media/vuemastery-graphical-link-96x56.png"
-                      />              
+                    <img
+                      class="banner"
+                      alt="Vue Mastery banner"
+                      width="145px"
+                      height="85px"
+                      src="https://storage.googleapis.com/vue-mastery.appspot.com/flamelink/media/vuemastery-graphical-link-96x56.png"
+                    />
                     <h3>
                       Learn Vue with video tutorials on
                       <span>VueMastery.com</span>
@@ -105,11 +105,11 @@
           <h2>What is Vue?</h2>
           <article class="what-is-vue">
             <p>
-              Vue (pronounced /vju:/, like <b>view</b>) is a JavaScript framework for
-              building user interfaces. It builds on top of standard HTML, CSS
-              and JavaScript, and provides a declarative and component-based
-              programming model that helps you efficiently develop user
-              interfaces, be it simple or complex.
+              Vue (pronounced /vju:/, like <b>view</b>) is a JavaScript
+              framework for building user interfaces. It builds on top of
+              standard HTML, CSS and JavaScript, and provides a declarative and
+              component-based programming model that helps you efficiently
+              develop user interfaces, be it simple or complex.
             </p>
             <p>Here is a minimal example:</p>
             <pre class="first-pre">
@@ -151,7 +151,10 @@
               </button>
             </div>
             <div class="core-features">
-              <p>The above example demonstrates the two <span style="color:#42b883;">core features</span> of Vue:</p>
+              <p>
+                The above example demonstrates the two
+                <span style="color: #42b883">core features</span> of Vue:
+              </p>
               <ul>
                 <li>
                   <b>Declarative Rendering:</b> Vue extends standard HTML with a
@@ -163,14 +166,14 @@
                   changes and efficiently updates the DOM when changes happen.
                 </li>
               </ul>
-            <div class="core-features-part2">
-              <p>
-                You may already <span> have questions - don't worry</span>. We will cover every
-                little detail in the rest of the documentation. For now, please
-                read along so you can have a high-level understanding of what Vue
-                offers.
-              </p>
-            </div>
+              <div class="core-features-part2">
+                <p>
+                  You may already <span> have questions - don't worry</span>. We
+                  will cover every little detail in the rest of the
+                  documentation. For now, please read along so you can have a
+                  high-level understanding of what Vue offers.
+                </p>
+              </div>
             </div>
             <div class="Prerequisites">
               <div class="Prereq-card">
@@ -178,10 +181,10 @@
                 <p>
                   The rest of the documentation assumes basic familiarity with
                   HTML, CSS and JavaScript. If you are totally new to frontend
-                  development, it might not be the best idea to jump right into a
-                  framework as your first step - grasp the basics and then come
-                  back! Prior experience with other frameworks helps, but is not
-                  required.
+                  development, it might not be the best idea to jump right into
+                  a framework as your first step - grasp the basics and then
+                  come back! Prior experience with other frameworks helps, but
+                  is not required.
                 </p>
               </div>
             </div>
@@ -189,7 +192,7 @@
         </section>
         <section>
           <div class="horizontal-line"></div>
-          <h2 class="progress-header" >The Progressive Framework</h2>
+          <h2 class="progress-header">The Progressive Framework</h2>
           <article class="progress-framework">
             <p>
               Vue is a framework and ecosystem that covers most of the common
@@ -239,91 +242,105 @@
         </section>
         <section>
           <div class="horizontal-line"></div>
-          <h2>Single-File Components</h2>
           <article class="single-file-components">
+            <h2>Single-File Components</h2>
             <p>
               In most build-tool-enabled Vue projects, we author Vue components
               using an HTML-like file format called Single-File Component (also
-              known as <code>*.vue</code> files, abbreviated as SFC). A Vue SFC,
-              as the name suggests, encapsulates the component's logic
-              (JavaScript), template (HTML), and styles (CSS) in a single file.
-              Here's the previous example, written in SFC format:
+              known as
+              <span
+                ><b style="padding-left: 5px">*.</b
+                ><span style="padding-left: 5px">vue</span></span
+              >
+              files, abbreviated as SFC). A Vue SFC, as the name suggests,
+              encapsulates the component's logic (JavaScript), template (HTML),
+              and styles (CSS) in a single file. Here's the previous example,
+              written in SFC format:
             </p>
-            <code>
-              <!--
-              <script>
-              export default {
+            <pre>
+              <code>
+                <span class="line"><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">script</span><span style="color:#89DDFF;">&gt;</span></span>
+                <span class="line"><span style="color:#89DDFF;font-style:italic;">export</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;font-style:italic;">default</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">  {</span></span>
+                <span class="line"><span style="color:#A6ACCD;">  </span><span style="color:#F07178;"> data</span><span style="color:#89DDFF;">()</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;"> {</span></span>
+                <span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;font-style:italic;">   return</span><span style="color:#F07178;"> </span><span style="color:#89DDFF;">  {</span></span>
+                <span class="line"><span style="color:#F07178;">          count</span><span style="color:#89DDFF;">:</span><span style="color:#F07178;"> </span><span style="color:#F78C6C;">  0</span></span>
+                <span class="line"><span style="color:#F07178;">    </span><span style="color:#89DDFF;">     }</span></span>
+                <span class="line"><span style="color:#F07178;">  </span><span style="color:#89DDFF;">   }</span></span>
+                <span class="line"><span style="color:#89DDFF;"> }</span></span>
+                <span class="line"><span style="color:#89DDFF;">&lt;/</span><span style="color:#F07178;">script</span><span style="color:#89DDFF;">&gt;</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">template</span><span style="color:#89DDFF;">&gt;</span></span>
+                <span class="line"><span style="color:#A6ACCD;">  </span>  <span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">button</span><span style="color:#89DDFF;">   @</span><span style="color:#C792EA;">click</span><span style="color:#89DDFF;">=</span><span style="color:#89DDFF;">"</span><span style="color:#A6ACCD;">count</span><span style="color:#89DDFF;">++</span><span style="color:#89DDFF;">"</span><span style="color:#89DDFF;">&gt;</span><span style="color:#A6ACCD;">Count is: </span><span style="color:#89DDFF;">  {{</span><span style="color:#A6ACCD;">  count  </span><span style="color:#89DDFF;"> }}&lt;/</span><span style="color:#F07178;">button</span><span style="color:#89DDFF;">&gt;</span></span>
+                <span class="line"><span style="color:#89DDFF;">&lt;/</span><span style="color:#F07178;">template</span><span style="color:#89DDFF;">&gt;</span></span>
+                <span class="line"></span>
+                <span class="line"><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">style</span><span style="color:#A6ACCD;"> </span><span style="color:#C792EA;">scoped</span><span style="color:#89DDFF;">&gt;</span></span>
+                <span class="line"><span style="color:#FFCB6B;">button</span> <span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">{</span></span>
+                <span class="line"><span style="color:#A6ACCD;">  </span><span style="color:#B2CCD6;">font-weight</span><span style="color:#89DDFF;">:</span><span style="color:#A6ACCD;"> bold</span><span style="color:#89DDFF;">;</span></span>
+                <span class="line"><span style="color:#89DDFF;">}</span></span>
+                <span class="line"><span style="color:#89DDFF;">&lt;/</span><span style="color:#F07178;">style</span><span style="color:#89DDFF;">&gt;</span></span>
+                <span class="last-line"></span></code>
+            </pre>
+            <p class="p-2">
+              SFC is a defining feature of Vue, and is the recommended way to
+              author Vue components if your use case warrants a build setup. You
+              can learn more about the how and why of SFC in its dedicated
+              section - but for now, just know that Vue will handle all the
+              build tools setup for you.
+            </p>
+          </article>
+        </section>
+        <section>
+          <div class="horizontal-line"></div>
+          <div class="api-styles">
+            <h2>API Styles</h2>
+            <article>
+              <p>
+                Vue components can be authored in two different API styles:
+                Options API and Composition API.
+              </p>
+              <h2>Options API</h2>
+              <p>
+                With Options API, we define a component's logic using an object of
+                options such as <code>data</code>, <code>methods</code>, and
+                <code>mounted</code>. Properties defined by options are exposed on
+                <code>this</code> inside functions, which points to the component
+                instance:
+              </p>
+              <code>
+                <!--
+                    <script>
+                    export default {
+                // Properties returned from data() become reactive state
+                // and will be exposed on `this`.
                 data() {
                   return {
                     count: 0
                   }
+                },
+              
+                // Methods are functions that mutate state and trigger updates.
+                // They can be bound as event listeners in templates.
+                methods: {
+                  increment() {
+                    this.count++
+                  }
+                },
+              
+                // Lifecycle hooks are called at different stages
+                // of a component's lifecycle.
+                // This function will be called when the component is mounted.
+                mounted() {
+                  console.log(`The initial count is ${this.count}.`)
                 }
               }
               </script>
-              
               <template>
-                <button @click="count++">Count is: {{ count }}</button>
+                <button @click="increment">Count is: {{ count }}</button>
               </template>
-              
-              <style scoped>
-              button {
-                font-weight: bold;
-              }
-              </style>
               -->
-            </code>
-          </article>
-        </section>
-        <hr />
-        <section>
-          <h1>API Styles</h1>
-          <article>
-            <p>
-              Vue components can be authored in two different API styles:
-              Options API and Composition API.
-            </p>
-            <h2>Options API</h2>
-            <p>
-              With Options API, we define a component's logic using an object of
-              options such as <code>data</code>, <code>methods</code>, and
-              <code>mounted</code>. Properties defined by options are exposed on
-              <code>this</code> inside functions, which points to the component
-              instance:
-            </p>
-            <code>
-              <!--
-                  <script>
-                   export default {
-              // Properties returned from data() become reactive state
-              // and will be exposed on `this`.
-              data() {
-                return {
-                  count: 0
-                }
-              },
-            
-              // Methods are functions that mutate state and trigger updates.
-              // They can be bound as event listeners in templates.
-              methods: {
-                increment() {
-                  this.count++
-                }
-              },
-            
-              // Lifecycle hooks are called at different stages
-              // of a component's lifecycle.
-              // This function will be called when the component is mounted.
-              mounted() {
-                console.log(`The initial count is ${this.count}.`)
-              }
-            }
-            </script>
-            <template>
-              <button @click="increment">Count is: {{ count }}</button>
-            </template>
-            -->
-            </code>
-          </article>
+              </code>
+            </article>
+          </div>
           <h3>Try it in the Playground</h3>
           <hr />
           <h2>Composition API</h2>
