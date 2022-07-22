@@ -275,20 +275,20 @@
         color: $text-color;
         list-style: none;
         padding: 0 0 30px 30px;
-          li {
+        li {
             font-size: 1.4rem;
             position: relative;
             color: $li-text-color;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 7px;
-                    height: 7px;
-                    border-radius: 50%;
-                    background-color: hsl(0, 0%, 36%);
-                    transition: background-color .5s;
-                    left: -1.8rem;
-                    top: 0.9rem;  
+            &::before {
+                content: "";
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: hsl(0, 0%, 36%);
+                transition: background-color .5s;
+                left: -1.8rem;
+                top: 0.9rem;  
             }
         }
     }
